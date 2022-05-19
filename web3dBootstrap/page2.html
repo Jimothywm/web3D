@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+
+    <title>Carousel Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- <script src="http://x3dom.org/release/x3dom.js"></script>
+    <link rel="stylesheet" href="http://x3dom.org/release/x3dom.css" /> -->
+    <script src="./x3dom-1.8.1/x3dom.js"></script>
+    <link rel="stylesheet" href="./x3dom-1.8.1/x3dom.css"/>
+    <link rel="stylesheet" href="./3d_models/"/>
+
+
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+    <link href="Coca Cola ii.ttf" rel="logo">
+</head>
+<body>
+<header>
+    <nav class="row navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <!-- <a class="navbar-brand" href="#">Coca Cola</a> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="logo">
+                <a class="logo" href="index.html">
+                    Coca Cola
+                </a>
+            </div>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">3D Models</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/Jimothywm/web3D.git">My GitHub</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+</header>
+<div>
+
+    <p><br><br><br><br><br><br>Dr Pepper Slim</p>
+    <div class="row">
+        <div class="col-xs-10">
+            <x3d width='600px' height='400px' id = "model">
+                <scene>
+                    <inline nameSpaceName="model" mapDEFToID="true" onclick="animateModel();" url="./3d_models/Dr_Pepper/DrPepperCanSlimSmoothed2.x3d"></inline>
+                </scene>
+            </x3d>
+            <a  class="btn btn-secondary btn-responsive" onclick="wireframe();">Wireframe</a>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="./images/dr_pepper_image.png">
+                <img src="./images/dr_pepper_image.png"></a>
+            </a>
+            <div class="desc">Add a description of the image here</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="./images/dr_pepper_image.png">
+                <img src="./images/dr_pepper_image.png"></a>
+            </a>
+            <div class="desc">Add a description of the image here</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="./images/dr_pepper_image.png">
+                <img src="./images/dr_pepper_image.png"></a>
+            </a>
+            <div class="desc">Add a description of the image here</div>
+        </div>
+    </div>
+
+    <div>
+        <p>Coca Cola Slim</p>
+        <div class="row">
+            <div class="col-xs-10">
+            <x3d width='600px' height='400px' id = "model2">
+                <scene>
+                    <inline nameSpaceName="model2" mapDEFToID="true" onclick="animateModel();" url="./3d_models/coke/cokeCanSlimSmoothed.x3d"></inline>
+                </scene>
+            </x3d>
+            </div>
+        </div>
+    </div>
+    <a  class="btn btn-secondary btn-responsive" onclick="wireframe2();">Wireframe</a>
+
+    <div>
+        <p>Fanta Slim</p>
+        <div class="row">
+            <x3d width='600px' height='400px' id = "model3">
+                <scene>
+                    <inline nameSpaceName="model3" mapDEFToID="true" onclick="animateModel();" url="./3d_models/fanta/FantaCanSlimSmoothedLight4.x3d"></inline>
+                </scene>
+            </x3d>
+        </div>
+    </div>
+    <a  class="btn btn-secondary btn-responsive" onclick="wireframe3();">Wireframe</a>
+    <div>
+        <p>Costa Mug</p>
+        <div class="row">
+            <x3d width='600px' height='400px' id = "model4">
+                <scene>
+                    <inline nameSpaceName="model4" mapDEFToID="true" onclick="animateModel();" url="./3d_models/costaCup/costaCupManyLogo.x3d"></inline>
+                </scene>
+            </x3d>
+        </div>
+    </div>
+
+    <a  class="btn btn-secondary btn-responsive" onclick="wireframe4();">Wireframe</a>
+
+</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="./dist/js/popper.min.js"></script>
+<script src="./dist/js/bootstrap.min.js"></script>
+<!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+<script src="./dist/js/bootstrap.js"></script>
+<script src="./dist/js/modelInteractions.js"></script>
+
+
+<!-- <script type='text/javascript' src='http://www.x3dom.org/download/x3dom.js'> </script>
+<link rel='stylesheet' type='text/css' href='http://www.x3dom.org/download/x3dom.css'></link> -->
+</html>
+  
